@@ -35,7 +35,7 @@ def busqueda_binaria(lista, objetivo, limite_inferior=None, limite_superior=None
 if __name__=='__main__':
 
     # Crear lista con 10.000 elementos.
-    tamano = 1000
+    tamano = 10000
     conjunto_inicial = set()
 
     while len(conjunto_inicial) < tamano:
@@ -56,3 +56,8 @@ if __name__=='__main__':
         busqueda_binaria(lista_ordenada, objetivo)
     fin = time.time()
     print(f"Tiempo de busqueda binaria: {fin - inicio} segundos.")
+
+
+# Comparación en ambas funciones en mi PC:
+# Tiempo de busqueda ingenua: 2.19700026512146 segundos.
+# Tiempo de busqueda binaria: 0.04500007629394531 segundos.
